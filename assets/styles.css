@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/outfit/Outfit-VariableFont_wght.ttf'),
+    url('./fonts/outfit/static/Outfit-Regular.ttf'),
+    url('./fonts/outfit/static/Outfit-SemiBold.ttf'),
+    url('./fonts/outfit/static/Outfit-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'YoungSerif';
+  src: url('./fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  --text-preset-1: normal 400 1.2rem/150% 'Outfit', serif;
+  --text-preset-2: normal 400 1rem/150% 'Outfit', serif;
+  --text-preset-3: normal 400 2rem/150% 'YoungSerif', serif;
+  --text-preset-4: normal 400 1.5rem/150% 'YoungSerif', serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--stone-100);
+}
+
+main {
+  max-width: 684px;
+  margin: 0 auto 16px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+article {
+  padding: 40px 40px 30px;
+}
+
+h1 {
+  font: var(--text-preset-3);
+  margin-bottom: 24px;
+}
+
+h2 {
+  font: var(--text-preset-4);
+  color: var(--brown-800);
+}
+
+.prep-section {
+  padding: 29px;
+  margin: 34px 0;
+  background-color: var(--rose-50);
+  color: var(--rose-800);
+  font: var(--text-preset-1);
+  border-radius: 10px;
+}
+
+.ingredients-section {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.instructions-section {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+ul,
+ol {
+  font: var(--text-preset-2);
+  padding-left: 16px;
+}
+
+li {
+  color: var(--brown-800);
+  padding: 14px 0 0 16px;
+}
+
+p {
+  color: var(--stone-600);
+}
+
+.nutrition-section {
+  padding-top: 32px;
+  font: var(--text-preset-2);
+}
+
+.nutrition-section p {
+  padding: 16px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 16px 0 16px 32px;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+td:nth-child(even) {
+  font-weight: 600;
+  color: var(--brown-800);
+}
+
+td:nth-child(odd) {
+  width: 45%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 789px) {
+  body {
+    padding-top: 112px;
+  }
+
+  main {
+    padding: 40px 40px 30px;
+  }
+
+  article {
+    padding: 0;
+  }
+}

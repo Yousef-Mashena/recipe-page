@@ -23,8 +23,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/recipe-page-using-html-and-css-X8two8xxsI](https://www.frontendmentor.io/solutions/recipe-page-using-html-and-css-X8two8xxsI)
+- Live Site URL: [https://yousef-mashena.github.io/recipe-page/](https://yousef-mashena.github.io/recipe-page/)
 
 ## My process
 
